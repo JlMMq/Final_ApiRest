@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "babel-node": "babel-node --presets=@babel/preset-env",
-    "dev": "nodemon --exec npm run babel-node src/index.js"
+    "dev": "nodemon --exec npm run babel-node src/index.js",
+    "test": "jest",
+    "test:client" : "jest test/cliente.test.js",
+    "test:categoria" : "jest test/categoria.test.js",
+    "test:producto" : "jest test/producto.test.js",
+    "test:orden" : "jest test/orden.test.js"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +27,9 @@
     "@babel/core": "^7.24.7",
     "@babel/node": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
+    "jest": "^29.7.0",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
   }
 }
